@@ -5,7 +5,7 @@
 ##Descrição do Projeto
 <p align="center">Escrever uma breve descrição<p>
   
-  [![BANDTEC](https://img.shields.io/badge/license-BANDTEC-#00BDD0>.svg)](http://www.digitalschool.com.br/faculdade/#)
+  [![BANDTEC](https://img.shields.io/badge/<license>-<BANDTEC>-#00BDD0>.svg)](http://www.digitalschool.com.br/faculdade/#)
 
   
 
