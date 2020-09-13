@@ -38,13 +38,6 @@ $ npm install
 # Execute a aplicação 
 $ npm start
 
-### 🛠 Tecnologias
-
-As seguintes ferramentas foram usadas na construção do projeto:
-
-- [Node.js](https://nodejs.org/en/)
-
-
 
 
  
