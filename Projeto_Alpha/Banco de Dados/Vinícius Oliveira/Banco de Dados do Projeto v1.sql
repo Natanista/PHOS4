@@ -2,13 +2,13 @@ create database DHProject;
 -- "DHProject" (Daylight Harvesting Project)
 -- Criação do Banco de Dados "DHProject"
 
-use DHProject ;
+use DHProject;
 -- Selecionado o Banco de Dados "DHProject"
 
 create table Empresa(
 -- Banco de Dados do Cadastro das Empresas / Usuário
-	idlogin int primary key NOT NULL AUTO_INCREMENT,
-	CNPJ varchar(20),
+    idlogin int primary key NOT NULL AUTO_INCREMENT,
+    CNPJ varchar(20),
     nome varchar(50),
     senha varchar(50),
     telefone varchar(20),
@@ -19,7 +19,7 @@ create table Empresa(
 
 create table Sensores(
 -- Banco de Dados do Sensor
-	idsensor int primary key NOT NULL AUTO_INCREMENT,
+    idsensor int primary key NOT NULL AUTO_INCREMENT,
     modelo varchar(20),
     dado_sensor varchar(20));
 -- Criação da Tabela "Sensores"
