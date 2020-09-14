@@ -27,5 +27,14 @@ CREATE TABLE login(
  FROM informacoes;
  
  INSERT INTO informacoes
- VALUES ('1','Natan','Silva','natan@bandtec.com.br','119999','Google Inc.');
+ VALUES ('1','Natan','Silva',
+ 'natan@bandtec.com.br','119999','Google Inc.');
+ 
+ CREATE TABLE empresa(
+	endereço varchar(255)
+    numero INT, 
+    economia
+ );
+ 
+ 
  
