@@ -13,6 +13,7 @@ create table Empresa (
   foreign key (id) references Usuario (id),
   empresa varchar(60),
   cnpj char(14),
+  );
   
   
   
