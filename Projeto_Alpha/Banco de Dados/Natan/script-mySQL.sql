@@ -31,9 +31,13 @@ CREATE TABLE login(
  'natan@bandtec.com.br','119999','Google Inc.');
  
  CREATE TABLE empresa(
-	endereço varchar(255)
+	id_empresa INT NOT NULL,
+	endereço varchar(255),
+    bairro varchar(80),
     numero INT, 
-    economia
+    cep INT,
+    cidade varchar(80),
+    estado varchar(80)
  );
  
  
