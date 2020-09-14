@@ -21,7 +21,7 @@ CREATE TABLE login(
  );
  
  CREATE TABLE empresa(
-	 id_empresa INT NOT NULL,
+	 id_empresa INT NOT NULL PRIMARY KEY,
 	 id_representante INT NOT NULL, 
 	 cnpj INT  NOT NULL,
     nome_empresa varchar(40),
