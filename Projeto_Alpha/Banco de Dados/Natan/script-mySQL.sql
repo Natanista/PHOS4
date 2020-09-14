@@ -40,5 +40,13 @@ CREATE TABLE login(
     estado varchar(80)
  );
  
+ CREATE TABLE projeto (
+ qtdLampadas int,
+ potenciaIndividual int,
+ hrsLigadas int,
+ diasLigados
+ 
+ );
+ 
  
  
