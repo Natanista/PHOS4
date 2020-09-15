@@ -1,4 +1,4 @@
-(![Banner](https://user-images.githubusercontent.com/54637218/93236726-8bebf900-f755-11ea-851b-06af17583a89.png)
+(![Banner](https://user-images.githubusercontent.com/54637218/93237023-ebe29f80-f755-11ea-869d-33f0ff72efec.png)
 )
 
 ## Solution
