@@ -12,14 +12,6 @@ CREATE TABLE login(
 	 empresa_id INT
  );
  
- CREATE TABLE projeto (
- id_empresa INT PRIMARY KEY NOT NULL, 
- qtdLampadas INT,
- potenciaIndividual INT,
- hrsLigadas INT,
- diasLigados INT
- );
- 
  CREATE TABLE empresa(
 	 id_empresa INT NOT NULL PRIMARY KEY,
 	 id_representante INT NOT NULL, 
@@ -34,3 +26,13 @@ CREATE TABLE login(
     cidade varchar(80),
     estado varchar(80)
  );
+ 
+ INSERT INTO login
+ VALUES('1','natanista','teamojesus1234');
+ 
+ INSERT INTO representante 
+ VALUES('1','Jonas Albulquerque','2');
+ 
+ INSERT INTO empresa 
+ VALUES ('1','1','1232132134','Google','google@gmail.com','123231312',
+ 'rua mauricelis','vila caieitatuba','223','2133214','Sao Paulo','SP');
