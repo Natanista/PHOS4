@@ -1,4 +1,5 @@
 CREATE DATABASE dados;
+use dados;
 
 CREATE TABLE login (
 	id_empresa INT NOT NULL,
@@ -21,7 +22,7 @@ CREATE TABLE empresa (
         bairro varchar(70),
         cidade varchar(70),
         estado varchar(70),
-        cep INT
+        cep varchar(10)
     );
 
     CREATE TABLE luminosidade (
@@ -29,20 +30,22 @@ CREATE TABLE empresa (
         luminosidade_atual varchar(10),
 		variacao_luminosidade varchar(10)
     );
-    
-INSERT INTO login
-VALUES ('1','jesus','ceu123');
 
-INSERT INTO empresa
-VALUES ('1','google','129923132','google@google.com',
-'21321312124');
+SELECT *
+FROM login;
+
+-- Natan
+INSERT INTO login 
+VALUES('1','natanista','@2e1oUdhu8QWQ80BWD');
+
+INSERT INTO empresa 
+VALUES ('1','GOOGLE','987388111','google@gmail.com','1231312213');
 
 INSERT INTO endereco
-VALUES ('1','rua joao','21','jardins','Sao Paulo',
-'Sao Paulo','213213');
+VALUES ('1','rua natenas','666','vila pumpulha','Sao Paulo','SP','09834203');
 
 INSERT INTO luminosidade 
-VALUES ('500lux','200lux','300lux');
+VALUES ('1000lux','980lux','20lux');
     
     
     
