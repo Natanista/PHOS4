@@ -1,38 +1,25 @@
-CREATE DATABASE empresa;
+CREATE DATABASE dados;
 
 CREATE TABLE login(
-	id_login INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	id_login INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
 	login varchar(40) NOT NULL,
-    senha varchar(40) NOT NULL
+        senha varchar(40) NOT NULL
  );
  
- CREATE TABLE informacoes(
-	id_info INT  NOT NULL,
-    first_name varchar(40),
-    last_name varchar(40),
-    email varchar(255),
-    telefone INT, 
-    empresa varchar(255)
+ CREATE TABLE representante (
+ 	id_representante INT NOT NULL PRIMARY KEY, 
+	 nome_representante varchar (70),
+	 empresa_id INT
  );
- 
- SELECT *
- FROM  login l
- JOIN  informacoes i
- ON l.id_login = i.id_info;
- 
- INSERT INTO login
- VALUES ('1','natanista','patinhofeio123');
- 
- SELECT * 
- FROM informacoes;
- 
- INSERT INTO informacoes
- VALUES ('1','Natan','Silva',
- 'natan@bandtec.com.br','119999','Google Inc.');
  
  CREATE TABLE empresa(
-	id_empresa INT NOT NULL,
-	endereço varchar(255),
+	 id_empresa INT NOT NULL PRIMARY KEY,
+	 id_representante INT NOT NULL, 
+	 cnpj INT  NOT NULL,
+    nome_empresa varchar(40),
+    email varchar(255),
+    telefone INT ,
+    endereço varchar(255),
     bairro varchar(80),
     numero INT, 
     cep INT,
@@ -40,13 +27,12 @@ CREATE TABLE login(
     estado varchar(80)
  );
  
- CREATE TABLE projeto (
- qtdLampadas int,
- potenciaIndividual int,
- hrsLigadas int,
- diasLigados
+ INSERT INTO login
+ VALUES('1','natanista','teamojesus1234');
  
- );
+ INSERT INTO representante 
+ VALUES('1','Jonas Albulquerque','2');
  
- 
- 
+ INSERT INTO empresa 
+ VALUES ('1','1','1232132134','Google','google@gmail.com','123231312',
+ 'rua mauricelis','vila caieitatuba','223','2133214','Sao Paulo','SP');
