@@ -36,16 +36,20 @@ FROM login;
 
 -- Natan
 INSERT INTO login 
-VALUES('1','natanista','@2e1oUdhu8QWQ80BWD');
+VALUES('1','natanista','@2e1oUdhu8QWQ80BWD'),
+	  ('2','LuizGsilva','ghghhghg');
 
 INSERT INTO empresa 
-VALUES ('1','GOOGLE','987388111','google@gmail.com','1231312213');
+VALUES('1','GOOGLE','987388111','google@gmail.com','1231312213'),
+	  ('2','iutube','923421421','arebaba@hotmail.com','4123432141');
 
 INSERT INTO endereco
-VALUES ('1','rua natenas','666','vila pumpulha','Sao Paulo','SP','09834203');
+VALUES('1','rua natenas','666','vila pumpulha','Sao Paulo','SP','09834203'),
+	  ('2','rua das oliveiras','16','vila do chaves','Mauá','SP','09361231');
 
 INSERT INTO luminosidade 
-VALUES ('1000lux','980lux','20lux');
+VALUES('1000lux','980lux','20lux'),
+	  ('1100lux','950lux','150lux');
     
     
     
