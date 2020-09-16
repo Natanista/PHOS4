@@ -35,7 +35,7 @@
 
     </div>
     <div class="explicando">
-        <h1>Como é feito o calculo?</h1>
+        <h1>Como é feito o cálculo?</h1>
         <p>Primeiro o nosso simulador calcular o seu consumo de energia de acordo com a quantidade, potência e tempo de uso das lâmpadas(Wh). Após isso, faz-se uma conversão para quilo Watts hora(kW), assim podemos chegar ao valor aproximado que representa o seu consumo. </p>
         <p>A nossa empresa ultiliza da tecnologia de "Daylight Harvesting", que segundo <a style="color: red;" href="https://www.sciencedirect.com/science/article/pii/S1878029617301317">estudos</a> pode levar a uma <span class="yellow">economia de até 27%</span>. Assim, para finalizar o calculo, subtraimos 27% do seu valor de consumo para resultar na sua possível economia com nossos serviços.</p>
     </div>
@@ -43,8 +43,9 @@
     <script>
         function simular() {
             var media = (Number(qtdLampadas.value) * Number(potencia.value) * Number(horas.value) * Number(dias
-                .value)) / 1000; //1000W
-            var resultado = media - ((27 / 100) * media); // até 27% de desconto na conta
+                .value)) / 1000; //1000 para converter para quilo Watts hora
+             var custo = media * 0.6;
+            var resultado = custo - ((27 / 100) * custo); // até 27% de desconto na conta
             teste.innerHTML = resultado.toFixed(2);
         }
     </script>
