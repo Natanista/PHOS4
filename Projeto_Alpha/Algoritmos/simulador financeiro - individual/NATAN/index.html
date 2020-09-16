@@ -45,7 +45,7 @@
             var media = (Number(qtdLampadas.value) * Number(potencia.value) * Number(horas.value) * Number(dias
                 .value)) / 1000; //1000W
             var resultado = media - ((27 / 100) * media); // até 27% de desconto na conta
-            teste.innerHTML = `${resultado}`;
+            teste.innerHTML = resultado.toFixed(2);
         }
     </script>
 </body>
