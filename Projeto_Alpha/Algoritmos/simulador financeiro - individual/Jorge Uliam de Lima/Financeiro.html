@@ -18,8 +18,8 @@
     Quanto dias do mês sua empresa está em funcionamento?
     <input id='diasL' type="text"> <br> <br>
 
-    <button onclick="gasto()">Descubra o quanto você gasta com luz!</button> 
-    <button onclick="gastotec()">Descubra o quanto você gasta com luz com a nossa tecnologia!</button> <br> <br>
+    <button onclick="gasto()">Descubra o quanto você gasta anualmente com luz!</button> 
+    <button onclick="gastotec()">Descubra o quanto você gasta anualmente com luz com a nossa tecnologia!</button> <br> <br>
     <div id="div_msg"></div>
 
 </body>
@@ -27,17 +27,17 @@
 <script>
     function gasto() {
         
-        var media = (qtdL.value * qtdMW.value * hrsL.value * diasL.value);
+        var media = ((qtdL.value * qtdMW.value * hrsL.value) * diasL.value * 12);
         var custo = (media / 1000 * 0.8)
 
-        div_msg.innerHTML +=`<br>  A média que você gasta é de:<b> R$ ${(custo).toFixed(2)}! </b>`;
+        div_msg.innerHTML +=`<br>  A média que você gasta anualmente é de:<b> R$ ${(custo).toFixed(2)}! </b>`;
     }
 
     function gastotec() {
-        var media = (qtdL.value * qtdMW.value * hrsL.value * diasL.value);
+        var media = ((qtdL.value * qtdMW.value * hrsL.value) * diasL.value * 12);
         var custo = (media / 1000 * 0.8)
 
-        div_msg.innerHTML +=`<br> A média que você gasta com a nossa tecnologia aplicada é de:<b> R$ ${(custo - (custo * 0.27)).toFixed(2)}! </b>`;
+        div_msg.innerHTML +=`<br> A média que você gasta anualmente com a nossa tecnologia aplicada é de:<b> R$ ${(custo - (custo * 0.27)).toFixed(2)}! </b>`;
 
     }
 </script>
