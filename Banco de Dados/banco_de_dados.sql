@@ -54,8 +54,26 @@ INSERT INTO luminosidade
 VALUES('1000lux','980lux','20lux'),
       ('1100lux','950lux','150lux');
       ('1200lux','1000lux','200lux');  
-    
-    
+  
+  
+  
+  -- Matheus silva
+   
+   Inserts
+
+    INSERT INTO login
+VALUES ('01','Carlos','carlos15');
+
+INSERT INTO empresa
+VALUES ('02','amazon','19933142','amazon@amazon.com',
+'00021315129');
+
+INSERT INTO endereco
+VALUES ('03','rua caxias','17','carrao','Sao Paulo',
+'Sao Paulo','0822558');
+
+INSERT INTO luminosidade 
+VALUES ('500lux','300lux','200lux');
     
     
     
