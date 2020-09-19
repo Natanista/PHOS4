@@ -30,9 +30,9 @@
 
         <button class="btn" onclick="simular()">Economizar</button><br><br></br>
 
-        <span class="pre-resultado"> O seu potencial econômico é de: R$ </span>
-        <span class="resultado" id="teste">X</span><span class="pre-resultado">/ano</span>
-
+        <span class="pre-resultado"> O seu potencial econômico é de: R$ <bR></span>
+        <span  id="teste"></span><span class="pre-resultado">/ano</span><br><span class="pre-resultado">Isso representa:</span><span id="teste2" ></span><span class="pre-resultado">em 5 anos</span><br>
+        <br><span>* Esta é apenas uma simulação. O seu desconto real pode sofrer uma variação.</span>
     </div>
     <div class="explicando">
         <h1>Como é feito o cálculo?</h1>
@@ -51,7 +51,11 @@
                 .value)) / 1000) * 12; //1000 para converter para quilo Watts hora e multiplicar o valor por 12 meses
             var custo = media * 0.8; //0,8 é o custo do quilo Wh em SP 
             var resultado = (27 / 100) * custo; // até 27% de desconto na conta
-            teste.innerHTML = resultado.toFixed(2);
+            var resultado2 = resultado * 5; 
+
+            teste.innerHTML =`<span class="resultado">${resultado.toFixed(2)}</span>`;
+            teste2.innerHTML = `<span class="resultado2">${resultado2.toFixed(2)}</span`;
+            
         }
     </script>
 </body>

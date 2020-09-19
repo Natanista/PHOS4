@@ -5,6 +5,7 @@ body {
     background-color:#FBE8A6;
     margin: 0;
     padding: 0;
+    background-image: url(/img/);
 }
 
 .container {
@@ -43,15 +44,22 @@ body {
     font-size: 70px;
 }
 
+.resultado2 {
+    color: green;
+    font-size: 40px;
+}
+
 .container input {
     font-size: 20px;
     text-align: center;
+
 }
 
 header {
     width: 100%;
     height: 80px;
     background-color:#F4976C ;
+    opacity: 0.5;
 }
 
 .title-header{
@@ -64,13 +72,14 @@ header {
 
 .explicando {
     background-color: #303C6C;
-   color:white;
+    color:white;
     padding: 4em;
     width: 50%;
     margin: 0 auto;
     text-align: center;
     margin-bottom:10em;
-    font-size: 20px;   
+    font-size: 20px;  
+    
 }
 
 .explicando a {
@@ -81,4 +90,5 @@ header {
 .yellow {
     color: yellow;
 }
+
 
