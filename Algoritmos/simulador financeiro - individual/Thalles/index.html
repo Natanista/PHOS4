@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="topnav">
-        <a href="#home">OI</a>
+        <a href="#home"><img src="img/logo.png" alt="" class="logo"></a>
         <div class="topnav-right">
           <a href="#comofunciona">como funciona?</a>
           <a href="#simulador">simulador</a>
@@ -56,9 +56,9 @@
 <script>
     function simular() {
             var media = (Number(qtdLamp.value) * Number(potencia.value) * Number(qtdHoras.value) * Number(qtdDias.value)) / 1000; 
-            var mensal = media * 0.6;
+            var mensal = media * 0.85;
             var custo = mensal * 12;
-            var resultado = custo - ((27 / 100) * custo);
+            var resultado = (27 / 100) * custo;
             var resultado2 = resultado * 5;
-        resposta.innerHTML = `O seu potencial economico anual é R$ ${resultado}, ou seja, em até 5 anos você terá economizado até R$ ${resultado2}`;}
+        resposta.innerHTML = `O seu potencial economico anual é R$ ${resultado.toFixed(2)}, ou seja, em até 5 anos você terá economizado até R$ ${resultado2.toFixed(2)}`;}
 </script>
