@@ -42,13 +42,13 @@
 <b></b>     
     <script>
         function simular() {
-            var media = ((Number(qtdLampadas.value) * 15 * 15 * 22) / 1000) * 12; //1000 para converter para quilo Watts hora e multiplicar o valor por 12 meses
-            var custo = media * 0.8; //0,8 é o custo do quilo Wh em SP 
-            var resultado = (27 / 100) * custo; // até 27% de desconto na conta
-            var resultado2 = resultado * 5; 
+            var gastoEnergetico = ((Number(qtdLampadas.value) * 15 * 15 * 22) / 1000) * 12; //1000 para converter para quilo Watts hora e multiplicar o valor por 12 meses
+            var custo = gastoEnergetico * 0.8; //0,8 é o custo do quilo Wh em SP 
+            var desconto = (27 / 100) * custo; // até 27% de desconto na conta
+            var economia = desconto * 5; 
 
-            teste.innerHTML =`<span class="pre-resultado">R$</span> <span class="resultado">${resultado.toFixed(2)}</span>`;
-            teste2.innerHTML = `<span class="pre-resultado">R$</span><span class="resultado2">${resultado2.toFixed(2)}</span`;
+            teste.innerHTML =`<span class="pre-resultado">R$</span> <span class="resultado">${desconto.toFixed(2)}</span>`;
+            teste2.innerHTML = `<span class="pre-resultado">R$</span><span class="resultado2">${economia.toFixed(2)}</span`;
             
         }
     </script>
