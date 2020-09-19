@@ -17,19 +17,10 @@
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
 }
@@ -63,4 +54,7 @@
 }
 .foot2{
  text-align: center;
+}
+.logo{
+  height: 40px;
 }
