@@ -10,7 +10,9 @@
 
 <body>
     <header>
-        <h1 class="title-header"><span>PHOS4</span></h1>
+        <img  class ='img' src="/img/logo.png">
+       
+        
     </header>
 
     <div class="container">
@@ -19,19 +21,12 @@
         <h2>Quantas lâmpadas existem nos escritórios?</h2>
         <input type="text" id="qtdLampadas" placeholder="insira o valor aqui">
 
-        <h2>Qual a média de potência das lâmpadas? Em Watts(W)</h2>
-        <input type="text" id="potencia" placeholder="insira o valor aqui">
-
-        <h2>Por quantas horas(dia) as lâmpadas ficam acessas?</h2>
-        <input type="text" id="horas" placeholder="insira o valor aqui">
-
-        <h2>Por quantos dias(mês) as lâmpadas são acessas?</h2>
-        <input type="text" id="dias" placeholder="insira o valor aqui"><br><br>
+        <br><br>
 
         <button class="btn" onclick="simular()">Economizar</button><br><br></br>
 
-        <span class="pre-resultado"> O seu potencial econômico é de: R$ <bR></span>
-        <span  id="teste"></span><span class="pre-resultado">/ano</span><br><span class="pre-resultado">Isso representa:</span><span id="teste2" ></span><span class="pre-resultado">em 5 anos</span><br>
+        <span class="pre-resultado"> O seu potencial econômico é de:  <bR></span>
+        <span  id="teste"></span><span class="pre-resultado">/ano</span><br><span class="pre-resultado">Isso representa: </span><span id="teste2" ></span><span class="pre-resultado">em 5 anos</span><br>
         <br><span>* Esta é apenas uma simulação. O seu desconto real pode sofrer uma variação.</span>
     </div>
     <div class="explicando">
@@ -47,14 +42,13 @@
 <b></b>     
     <script>
         function simular() {
-            var media = ((Number(qtdLampadas.value) * Number(potencia.value) * Number(horas.value) * Number(dias
-                .value)) / 1000) * 12; //1000 para converter para quilo Watts hora e multiplicar o valor por 12 meses
+            var media = ((Number(qtdLampadas.value) * 15 * 15 * 22) / 1000) * 12; //1000 para converter para quilo Watts hora e multiplicar o valor por 12 meses
             var custo = media * 0.8; //0,8 é o custo do quilo Wh em SP 
             var resultado = (27 / 100) * custo; // até 27% de desconto na conta
             var resultado2 = resultado * 5; 
 
-            teste.innerHTML =`<span class="resultado">${resultado.toFixed(2)}</span>`;
-            teste2.innerHTML = `<span class="resultado2">${resultado2.toFixed(2)}</span`;
+            teste.innerHTML =`<span class="pre-resultado">R$</span> <span class="resultado">${resultado.toFixed(2)}</span>`;
+            teste2.innerHTML = `<span class="pre-resultado">R$</span><span class="resultado2">${resultado2.toFixed(2)}</span`;
             
         }
     </script>

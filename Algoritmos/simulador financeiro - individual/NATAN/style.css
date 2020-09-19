@@ -2,20 +2,21 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color:#FBE8A6;
+    background-color:#232323;
     margin: 0;
     padding: 0;
     background-image: url(/img/);
 }
 
 .container {
-    background-color:#B4DFE5;
+    background-color:#F8CF2C;
     padding: 4em;
     width: 50%;
     margin: 0 auto;
     text-align: center;
     margin-bottom:10em;
     margin-top: 30px;
+    
     
 }
 
@@ -28,7 +29,7 @@ body {
    
 }
 .btn:hover {
-    background-color: #F4976C;
+    background-color: #2B2A28;
     color: white;
 }
 
@@ -58,8 +59,8 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color:#F4976C ;
-    opacity: 0.5;
+    background-color:#68C5CC ;
+   
 }
 
 .title-header{
@@ -71,8 +72,8 @@ header {
 }
 
 .explicando {
-    background-color: #303C6C;
-    color:white;
+    background-color: #68C5CC;
+    color:black;
     padding: 4em;
     width: 50%;
     margin: 0 auto;
@@ -91,4 +92,7 @@ header {
     color: yellow;
 }
 
+.img {
+    width: 75px;
+}
 
