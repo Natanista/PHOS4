@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Line Chart</title>
+	<title>Veja sua luminosidade</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
 	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
@@ -13,16 +13,25 @@
 			-webkit-user-select: none;
 			-ms-user-select: none;
 		}
+		body{
+			background-color: rgba(35,35,35);
+		}
+		*{
+			color: #FFD700;
+		}
 	</style>
 </head>
 
 <body>
+	
 	<section>
-		<h2>Média: <label id='average'>0.00</label></h2>
+		<h2>Média Lum.: <label id='average'>0.00</label></h2>
 		<h2>Média Hora: <label id='averageHour'>0.00</label></h2>
 	</section>
+	<div style="background-color: rgba(211,211,211)	;">
 	<section style="width:100%">
 		<canvas id="chart"></canvas>
+	</div>
 	<section>
 	<script>
 
@@ -34,10 +43,11 @@
 			type: 'line', //alteração do tipo de gráfico (barra, linhas, pizza...)
 			data: {
 				datasets: [{
-					label: "Temperature x Time",
+					label: "Luminosidade x Tempo",
 					type: 'line',
-					backgroundColor: ['rgba(255, 99, 0, 0.2)'], //altera a cor de fundo do gráfico
-					borderColor: ['#ff3232'], // altera a cor da linha do gráfico
+					backgroundColor: ['rgba(255, 255, 0, 0.4)'], //altera a cor de fundo do gráfico
+					borderColor: ['#FFD700'],
+					color: ['#FFD700'], // altera a cor da linha do gráfico
 				}]
 			},
 			options: {
@@ -53,12 +63,12 @@
 					yAxes: [{
 						scaleLabel: {
 							display: true,
-							labelString: 'Temperature'
+							labelString: 'Luminosidade',
                         },
                         ticks: {
 							beginAtZero:true,
 							suggestedMin: 0,
-							suggestedMax: 30
+							suggestedMax: 800
                         }
 					}]
 				},
@@ -122,9 +132,10 @@
         setInterval(() => {
 			sendTemperature();
 			get_data();
-        }, 1000);
+        }, 3000);
 
 	</script>
+	
 </body>
 
 </html>
