@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="/style.css">
     <title>Simulador Financeiro</title>
 </head>
 
@@ -42,10 +42,10 @@
 <b></b>     
     <script>
         function simular() {
-            var gastoEnergetico = ((Number(qtdLampadas.value) * (15 * 15 * 22)) / 1000) * 12; //1000 para converter para quilo Watts hora e multiplicar o valor por 12 meses
-            var custo = media * 0.8; //0,8 é o custo do quilo Wh em SP 
+            var gastoEnergetico = ((Number(qtdLampadas.value) * 15 * 15 * 22) / 1000) * 12; //1000 para converter para quilo Watts hora e multiplicar o valor por 12 meses
+            var custo = gastoEnergetico * 0.8; //0,8 é o custo do quilo Wh em SP 
             var desconto = (27 / 100) * custo; // até 27% de desconto na conta
-            var economia = resultado * 5; 
+            var economia = desconto * 5; 
 
             teste.innerHTML =`<span class="pre-resultado">R$</span> <span class="resultado">${desconto.toFixed(2)}</span>`;
             teste2.innerHTML = `<span class="pre-resultado">R$</span><span class="resultado2">${economia.toFixed(2)}</span`;
