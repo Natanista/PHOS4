@@ -28,8 +28,8 @@ CREATE TABLE Endereco (
     idempresa INT primary key NOT NULL,
     endereco varchar(30),
     numero char(4),
-    bairro varchar(40),
-    cidade varchar(40),
+    bairro varchar(20),
+    cidade varchar(20),
     uf char(2));
     -- Inserção dos campos para a tabela endereço
 
