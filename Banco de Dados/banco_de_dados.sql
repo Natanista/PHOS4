@@ -26,6 +26,7 @@ CREATE TABLE empresa (
     );
 
     CREATE TABLE luminosidade (
+		id_empresa int,
 		luminosidade_ideal varchar(10),
         luminosidade_atual varchar(10),
 		variacao_luminosidade varchar(10)
@@ -56,15 +57,15 @@ VALUES(1,'rua natenas','666','vila pumpulha','Sao Paulo','SP','09834203'),
       (3,'rua das pumas','24','vila das feras','Guarulhos','SP','09382111'),
       (4,'rua das casas', '3112','jardim das lojas','Interlagos','SP','05315665'),
       (5,'rua caxias','17','carrao','Sao Paulo','SP','00822558'),
-	(6,'av goias', '2025','Barcelona','Interlagos','SP','025420120');
+	(6,'av goias', '2025','Barcelona','São Caetano do Sul','SP','025420120');
 	  
 INSERT INTO luminosidade 
-VALUES('1000lux','980lux','20lux'),
-      ('1100lux','950lux','150lux'),
-      ('1200lux','1000lux','200lux'),
-      ('1300lux','1050lux','100lux'),
-      ('500lux','300lux','200lux'),
-      ('750lux','540lux','100lux');
+VALUES(1,'1000lux','980lux','20lux'),
+      (2,'1100lux','950lux','150lux'),
+      (3,'1200lux','1000lux','200lux'),
+      (4,'1300lux','1050lux','100lux'),
+      (5,'500lux','300lux','200lux'),
+      (6,'750lux','540lux','100lux');
     
     
     
