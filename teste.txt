@@ -2,3 +2,4 @@ bom dia
 boa tarde
 boa noite
 mensagem
+oi
