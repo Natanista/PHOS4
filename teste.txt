@@ -2,4 +2,7 @@ bom dia
 boa tarde
 boa noite
 mensagem
-oi
+olá
+gato 
+cachorro
+peixe
