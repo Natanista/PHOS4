@@ -59,7 +59,7 @@ VALUES(1,'rua natenas','666','vila pumpulha','Sao Paulo','SP','09834203'),
       (3,'rua das pumas','24','vila das feras','Guarulhos','SP','09382111'),
       (4,'rua das casas', '3112','jardim das lojas','Interlagos','SP','05315665'),
       (5,'rua caxias','17','carrao','Sao Paulo','SP','00822558'),
-	(6,'av goias', '2025','Barcelona','São Caetano do Sul','SP','025420120'),
+	(6,'av goias', '2025','Barcelona','São Caetano do Sul','SP','02542120'),
 	(7,'rua alexandre dumas', '1711','Andrade','São Paulo','SP','06524511');
 	  
 INSERT INTO luminosidade 
@@ -70,5 +70,10 @@ VALUES(1,'1000lux','980lux','20lux'),
       (5,'500lux','300lux','200lux'),
       (6,'750lux','540lux','100lux'),
       (7,'650lux','850lux','50lux');
+
+UPDATE login SET login = 'Carlinhos' where id_empresa = '5';
+
+DELETE FROM login WHERE id_empresa = '5';
+DROP DATABASE phos4;
     
     
