@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background:url(../ImagensSite/escritorio.jpg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: static;
+    opacity: 0,9;
+    
+ }
+
+.img-logo { 
+    width: 180px;
+    height: 180px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+li { 
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    display: inline-block;
+    padding-left: 70px;
+}
+.filho{
+    float: right;
+    padding-top: 5px;
+    margin-top: 0;
+    padding-right: 400px;
+    font-size: 25px;
+}
+.pai {
+    
+    width: 100%;
+    height: 190px;
+}
+a{ 
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+ /* Por existirem muitos navegadores, e cada um com sua especificação, é necessário adicionar esses prefixos para que um estilo CSS funcione em todos.
+
+Assim temos que:
+
+-webkit- (Chrome, Safari, versões mais recentes do Opera.)
+
+-moz-(Firefox)
+
+-o-(Versões antigas do Opera)
+
+-ms-(Internet Explorer) */
+
